@@ -14,6 +14,12 @@ const ModulesTheme = {
     highlight: themes['01'].Main.IllustrationHighlight,
     secondary: themes['01'].Main.IllustrationSecondary,
     tertiary: themes['01'].Main.IllustrationTertiary,
+    cardBackground: themes['01'].Main.CardBackground,
+    cardHeadline: themes['01'].Main.CardHeadline,
+    cardParagraph: themes['01'].Main.CardParagraph,
+    cardTagBackground: themes['01'].Main.CardTagBackground,
+    cardTagText: themes['01'].Main.CardTagText,
+    cardHighlight: themes['01'].Main.CardHighlight,
     links: themes['01'].Main.Links
   },
   getters: {},
@@ -32,6 +38,12 @@ const ModulesTheme = {
       state.highlight = lastTheme.Main.IllustrationHighlight
       state.secondary = lastTheme.Main.IllustrationSecondary
       state.tertiary = lastTheme.Main.IllustrationTertiary
+      state.cardBackground = lastTheme.Main.CardBackground
+      state.cardHeadline = lastTheme.Main.CardHeadline
+      state.cardParagraph = lastTheme.Main.CardParagraph
+      state.cardTagBackground = lastTheme.Main.CardTagBackground
+      state.cardTagText = lastTheme.Main.CardTagText
+      state.cardHighlight = lastTheme.Main.CardHighlight
       state.links = lastTheme.Main.Links
     }
   },

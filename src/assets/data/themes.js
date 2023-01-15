@@ -39,85 +39,10 @@ const themesList = [
     key: '08',
     disabled: false
   },
-  {
-    label: '09',
-    key: '09',
-    disabled: false
-  },
-  {
-    label: '10',
-    key: '10',
-    disabled: false
-  },
-  {
-    label: '11',
-    key: '11',
-    disabled: false
-  },
-  {
-    label: '12',
-    key: '12',
-    disabled: false
-  },
-  {
-    label: '13',
-    key: '13',
-    disabled: false
-  },
 ]
 
 const themes = {
   '01': {
-    Main: {
-      Background: '#fef6e4',
-      Headline: '#001858',
-      Paragraph: '#172c66',
-      Button: '#f582ae',
-      ButtonText: '#001858',
-      Links: '#fef6e4',
-      IllustrationStroke: '#001858',
-      IllustrationStrokeTranslucent: 'rgba(0, 24, 88, .12)',
-      IllustrationMain: '#f3d2c1',
-      IllustrationHighlight: '#fef6e4',
-      IllustrationSecondary: '#8bd3dd',
-      IllustrationTertiary: '#f582ae',
-      CardBackground: '#001858',
-      CardHeadline: '#fffffe',
-      CardParagraph: '#fef6e4',
-      CardTagBackground: '#fef6e4',
-      CardTagText: '#001858',
-      CardHighlight: '#f582ae'
-    },
-    Dark: {
-      Background: '#f3d2c1',
-      Headline: '#001858',
-      SubHeadline: '#172c66',
-      CardBackground: '#fef6e4',
-      CardHeading: '#001858',
-      CardParagraph: '#172c66',
-      IconsStroke: '#001858',
-      IconsMain: '#f3d2c1',
-      IconsHighlight: '#fef6e4',
-      IconsSecondary: '#8bd3dd',
-      IconsTertiary: '#f582ae'
-    },
-    Light: {
-      Background: '#fffffe',
-      Headline: '#001858',
-      Paragraph: '#172c66',
-      Link: '#f582ae',
-      CardBackground: '#f3d2c1',
-      CardHeadline: '#001858',
-      CardParagraph: '#172c66',
-      NewsletterBackground: '#f582ae',
-      NewsletterFormInput: '#f3d2c1',
-      NewsletterLabel: '#001858',
-      NewsletterPlaceholder: '#001858',
-      NewsletterFormButton: '#f582ae',
-      NewsletterFormButtonText: '#001858'
-    },
-  },
-  '02': {
     Main: {
       Background: '#55423d',
       Headline: '#fffffe',
@@ -167,7 +92,7 @@ const themes = {
       NewsletterFormButtonText: '#fffffe'
     },
   },
-  '03': {
+  '02': {
     Main: {
       Background: '#faeee7',
       Headline: '#33272a',
@@ -217,7 +142,7 @@ const themes = {
       NewsletterFormButtonText: '#33272a'
     },
   },
-  '04': {
+  '03': {
     Main: {
       Background: '#0f0e17',
       Headline: '#fffffe',
@@ -267,7 +192,7 @@ const themes = {
       NewsletterFormButtonText: '#fffffe'
     },
   },
-  '05': {
+  '04': {
     Main: {
       Background: '#232946',
       Headline: '#fffffe',
@@ -317,57 +242,7 @@ const themes = {
       NewsletterFormButtonText: '#fffffe'
     },
   },
-  '06': {
-    Main: {
-      Background: '#f9f4ef',
-      Headline: '#020826',
-      Paragraph: '#716040',
-      Button: '#8c7851',
-      ButtonText: '#fffffe',
-      Links: '#8c7851',
-      IllustrationStroke: '#020826',
-      IllustrationStrokeTranslucent: 'rgba(0, 24, 88, .12)',
-      IllustrationMain: '#fffffe',
-      IllustrationHighlight: '#8c7851',
-      IllustrationSecondary: '#eaddcf',
-      IllustrationTertiary: '#f25042',
-      CardBackground: '#fffffe',
-      CardHeadline: '#020826',
-      CardParagraph: '#716040',
-      CardTagBackground: '#8c7851',
-      CardTagText: '#fffffe',
-      CardHighlight: '#f25042'
-    },
-    Dark: {
-      Background: '#fffffe',
-      Headline: '#020826',
-      SubHeadline: '#716040',
-      CardBackground: '#eaddcf',
-      CardHeading: '#020826',
-      CardParagraph: '#716040',
-      IconsStroke: '#020826',
-      IconsMain: '#fffffe',
-      IconsHighlight: '#8c7851',
-      IconsSecondary: '#eaddcf',
-      IconsTertiary: '#f25042'
-    },
-    Light: {
-      Background: '#8c7851',
-      Headline: '#fffffe',
-      Paragraph: '#fffffe',
-      Link: '#8c7851',
-      CardBackground: '#eaddcf',
-      CardHeadline: '#020826',
-      CardParagraph: '#020826',
-      NewsletterBackground: '#f25042',
-      NewsletterFormInput: '#eaddcf',
-      NewsletterLabel: '#020826',
-      NewsletterPlaceholder: '#020826',
-      NewsletterFormButton: '#8c7851',
-      NewsletterFormButtonText: '#fffffe'
-    },
-  },
-  '07': {
+  '05': {
     Main: {
       Background: '#004643',
       Headline: '#fffffe',
@@ -417,57 +292,7 @@ const themes = {
       NewsletterFormButtonText: '#001e1d'
     },
   },
-  '08': {
-    Main: {
-      Background: '#f8f5f2',
-      Headline: '#232323',
-      Paragraph: '#222525',
-      Button: '#078080',
-      ButtonText: '#232323',
-      Links: '#078080',
-      IllustrationStroke: '#232323',
-      IllustrationStrokeTranslucent: 'rgba(0, 24, 88, .12)',
-      IllustrationMain: '#fffffe',
-      IllustrationHighlight: '#078080',
-      IllustrationSecondary: '#f45d48',
-      IllustrationTertiary: '#f8f5f2',
-      CardBackground: '#fffffe',
-      CardHeadline: '#232323',
-      CardParagraph: '#222525',
-      CardTagBackground: '#078080',
-      CardTagText: '#fffffe',
-      CardHighlight: '#078080'
-    },
-    Dark: {
-      Background: '#fffffe',
-      Headline: '#232323',
-      SubHeadline: '#222525',
-      CardBackground: '#f8f5f2',
-      CardHeading: '#232323',
-      CardParagraph: '#222525',
-      IconsStroke: '#232323',
-      IconsMain: '#fffffe',
-      IconsHighlight: '#078080',
-      IconsSecondary: '#f45d48',
-      IconsTertiary: '#f8f5f2'
-    },
-    Light: {
-      Background: '#feefe8',
-      Headline: '#232323',
-      Paragraph: '#222525',
-      Link: '#f45d48',
-      CardBackground: '#fffffe',
-      CardHeadline: '#232323',
-      CardParagraph: '#222525',
-      NewsletterBackground: '#078080',
-      NewsletterFormInput: '#fffffe',
-      NewsletterLabel: '#232323',
-      NewsletterPlaceholder: '#232323',
-      NewsletterFormButton: '#f45d48',
-      NewsletterFormButtonText: '#232323'
-    },
-  },
-  '09': {
+  '06': {
     Main: {
       Background: '#fec7d7',
       Headline: '#0e172c',
@@ -517,107 +342,7 @@ const themes = {
       NewsletterFormButtonText: '#d9d4e7'
     },
   },
-  '10': {
-    Main: {
-      Background: '#f2f7f5',
-      Headline: '#00473e',
-      Paragraph: '#475d5b',
-      Button: '#faae2b',
-      ButtonText: '#00473e',
-      Links: '#faae2b',
-      IllustrationStroke: '#00332c',
-      IllustrationStrokeTranslucent: 'rgba(0, 24, 88, .12)',
-      IllustrationMain: '#f2f7f5',
-      IllustrationHighlight: '#faae2b',
-      IllustrationSecondary: '#ffa8ba',
-      IllustrationTertiary: '#fa5246',
-      CardBackground: '#fffffe',
-      CardHeadline: '#00473e',
-      CardParagraph: '#475d5b',
-      CardTagBackground: '#faae2c',
-      CardTagText: '#00473e',
-      CardHighlight: '#d8779a'
-    },
-    Dark: {
-      Background: '#00473e',
-      Headline: '#fffffe',
-      SubHeadline: '#f2f7f5',
-      CardBackground: '#f2f7f5',
-      CardHeading: '#00473e',
-      CardParagraph: '#475d5b',
-      IconsStroke: '#00332c',
-      IconsMain: '#f2f7f5',
-      IconsHighlight: '#faae2b',
-      IconsSecondary: '#ffa8ba',
-      IconsTertiary: '#fa5246'
-    },
-    Light: {
-      Background: '#ffa8ba',
-      Headline: '#00473e',
-      Paragraph: '#00473e',
-      Link: '#00473e',
-      CardBackground: '#f2f7f5',
-      CardHeadline: '#00473e',
-      CardParagraph: '#00473e',
-      NewsletterBackground: '#d8779a',
-      NewsletterFormInput: '#f2f7f5',
-      NewsletterLabel: '#00473e',
-      NewsletterPlaceholder: '#00473e',
-      NewsletterFormButton: '#00473e',
-      NewsletterFormButtonText: '#f2f7f5'
-    },
-  },
-  '11': {
-    Main: {
-      Background: '#16161a',
-      Headline: '#fffffe',
-      Paragraph: '#94a1b2',
-      Button: '#7f5af0',
-      ButtonText: '#fffffe',
-      Links: '#7f5af0',
-      IllustrationStroke: '#010101',
-      IllustrationStrokeTranslucent: 'rgba(0, 24, 88, .12)',
-      IllustrationMain: '#fffffe',
-      IllustrationHighlight: '#7f5af0',
-      IllustrationSecondary: '#72757e',
-      IllustrationTertiary: '#2cb67d',
-      CardBackground: '#242629',
-      CardHeadline: '#fffffe',
-      CardParagraph: '#94a1b2',
-      CardTagBackground: '#7f5af0',
-      CardTagText: '#fffffe',
-      CardHighlight: '#fffffe'
-    },
-    Dark: {
-      Background: '#242629',
-      Headline: '#fffffe',
-      SubHeadline: '#94a1b2',
-      CardBackground: '#16161a',
-      CardHeading: '#fffffe',
-      CardParagraph: '#94a1b2',
-      IconsStroke: '#010101',
-      IconsMain: '#fffffe',
-      IconsHighlight: '#7f5af0',
-      IconsSecondary: '#72757e',
-      IconsTertiary: '#2cb67d'
-    },
-    Light: {
-      Background: '#242629',
-      Headline: '#fffffe',
-      Paragraph: '#94a1b2',
-      Link: '#7f5af0',
-      CardBackground: '#16161a',
-      CardHeadline: '#fffffe',
-      CardParagraph: '#94a1b2',
-      NewsletterBackground: '#fffffe',
-      NewsletterFormInput: '#16161a',
-      NewsletterLabel: '#fffffe',
-      NewsletterPlaceholder: '#fffffe',
-      NewsletterFormButton: '#7f5af0',
-      NewsletterFormButtonText: '#fffffe'
-    },
-  },
-  '12': {
+  '07': {
     Main: {
       Background: '#fffffe',
       Headline: '#00214d',
@@ -667,7 +392,7 @@ const themes = {
       NewsletterFormButtonText: '#00214d'
     },
   },
-  '13': {
+  '08': {
     Main: {
       Background: '#fffffe',
       Headline: '#181818',

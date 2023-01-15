@@ -47,18 +47,35 @@
             size="huge"
             :options="themes"
             @select="changeThemes">
-          <n-button>主题</n-button>
+          <n-button
+              :color="button"
+              :text-color="buttonText">主题</n-button>
         </n-dropdown>
         <!-- Github -->
         <n-icon
             size="30"
+            @click="toGit"
             class="github">
-          <logo-github />
+          <logo-github/>
         </n-icon>
         <!-- Avatar -->
-        <n-icon size="30" class="avatar">
-          <account-circle-filled />
+        <n-icon
+            size="30"
+            @click="openLogin = true"
+            class="avatar">
+          <account-circle-filled/>
         </n-icon>
+        <n-modal
+            v-model:show="openLogin"
+            :mask-closable="false"
+            preset="card"
+            size="huge"
+            :bordered="false"
+            role="dialog"
+            aria-modal="true"
+            :style="loginModal">
+          <component :is="loginComponent"></component>
+        </n-modal>
       </div>
     </div>
   </div>
@@ -74,10 +91,12 @@ import DateParsing from '../../util/dateParsing.js'
 
 function importComponent () {
   const defineSearch = defineAsyncComponent(() => import('../../components/Search.vue'))
+  const defineLogin = defineAsyncComponent(() => import('../login/Index.vue'))
 
   const markSearch = markRaw(defineSearch)
+  const markLogin = markRaw(defineLogin)
 
-  return { markSearch }
+  return { markSearch, markLogin }
 }
 
 export default {
@@ -94,6 +113,7 @@ export default {
     const dateParsing = new DateParsing()
     const state = reactive({
       searchComponent: components.markSearch,
+      loginComponent: components.markLogin,
       /**
        * Themes related
        */
@@ -110,9 +130,18 @@ export default {
       background: _sharedTheme.background,
       paragraph: _sharedTheme.paragraph,
       button: _sharedTheme.button,
+      buttonText: _sharedTheme.buttonText,
       stroke: _sharedTheme.stroke,
       strokeTranslucent: _sharedTheme.strokeTranslucent,
-      tertiary: _sharedTheme.tertiary
+      tertiary: _sharedTheme.tertiary,
+      /**
+       * Login related
+       */
+      openLogin: false,
+      loginModal: {
+        width: '560px',
+        background: _sharedTheme.cardBackground,
+      },
     })
 
     /**
@@ -132,6 +161,10 @@ export default {
       location.reload()
     }
 
+    const toGit = () => {
+      window.open('https://github.com/JiuMu-i/JiuMu', '_blank')
+    }
+
     /**
      * watch
      */
@@ -139,9 +172,11 @@ export default {
       state.background = to.background
       state.paragraph = to.paragraph
       state.button = to.button
+      state.buttonText = to.buttonText
       state.stroke = to.stroke
       state.strokeTranslucent = to.strokeTranslucent
       state.tertiary = to.tertiary
+      state.loginModal.background = to.cardBackground
     })
 
     /**
@@ -154,7 +189,8 @@ export default {
     return {
       ...toRefs(state),
       changeThemes,
-      rushHome
+      rushHome,
+      toGit
     }
   }
 }
@@ -179,7 +215,7 @@ export default {
       .logo {
         font-family: 'HFBest-Wishes-2';
         font-size: 18px;
-        color: v-bind(stroke);
+        color: v-bind(paragraph);
         cursor: pointer;
       }
     }
@@ -227,11 +263,11 @@ export default {
         }
       }
       .github {
-        color: v-bind(stroke);
+        color: v-bind(button);
         cursor: pointer;
       }
       .avatar {
-        color: v-bind(stroke);
+        color: v-bind(button);
         cursor: pointer;
       }
     }
